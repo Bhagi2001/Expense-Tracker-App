@@ -1,0 +1,39 @@
+.inc-exp-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-child {
+  border-right: 1px solid var(--border-color);
+}
+
+.inc-exp-container h4 {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.money {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.money.plus {
+  color: var(--success-color);
+}
+
+.money.minus {
+  color: var(--danger-color);
+}
