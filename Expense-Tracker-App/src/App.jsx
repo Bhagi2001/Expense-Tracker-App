@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header/Header'
 import Balance from './components/Balance/Balance'
 import IncomeExpenses from './components/IncomeExpenses/IncomeExpenses'
+import TransactionList from './components/TransactionList/TransactionList'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Balance transactions={[]} />
       <IncomeExpenses transactions={[]} />
+      <TransactionList transactions={[]} deleteTransaction={() => {}} />
     </div>
   )
 } 

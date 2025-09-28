@@ -1,0 +1,75 @@
+.transaction-list-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.transaction-list-container h3 {
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.list {
+  list-style-type: none;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.list li {
+  background: var(--bg-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.list li:hover {
+  transform: translateX(5px);
+}
+
+.list li.plus {
+  border-left: 5px solid var(--success-color);
+}
+
+.list li.minus {
+  border-left: 5px solid var(--danger-color);
+}
+
+.amount {
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.delete-btn {
+  background: var(--danger-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #e53e3e;
+  transform: scale(1.1);
+}
+
+.no-transactions {
+  text-align: center;
+  color: var(--text-light);
+  padding: 20px;
+}
