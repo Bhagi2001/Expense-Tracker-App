@@ -3,6 +3,7 @@ import Header from './components/Header/Header'
 import Balance from './components/Balance/Balance'
 import IncomeExpenses from './components/IncomeExpenses/IncomeExpenses'
 import TransactionList from './components/TransactionList/TransactionList'
+import AddTransaction from './components/AddTransaction/AddTransaction'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Balance transactions={[]} />
       <IncomeExpenses transactions={[]} />
       <TransactionList transactions={[]} deleteTransaction={() => {}} />
+      <AddTransaction addTransaction={() => {}} />
     </div>
   )
 } 
